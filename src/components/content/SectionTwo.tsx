@@ -1,5 +1,3 @@
-import React from "react";
-
 const SectionTwo = () => {
   return (
     <div className="w-full flex justify-center items-center mt-16 bg-[#f7f7f7]">
