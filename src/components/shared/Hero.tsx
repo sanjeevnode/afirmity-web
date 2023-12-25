@@ -3,6 +3,7 @@ import HeroImage from "../../../public/Hero.jpg";
 const Hero = () => {
   return (
     <div
+      id="home"
       className="w-full h-[420px] md:h-screen max-md:pt-10  bg-cover bg-center flex justify-center items-center "
       style={{ backgroundImage: `url(${HeroImage})` }}
     >

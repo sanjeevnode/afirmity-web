@@ -114,6 +114,7 @@ export default PopularProjects;
 const SliderItem = ({ item, currentIndex }: ISliderItem) => {
   return (
     <div
+      id="projects"
       className={`min-w-full min-h-full relative flex flex-col ${
         currentIndex !== 0 && "transition duration-500 ease-in-out"
       }`}

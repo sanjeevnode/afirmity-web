@@ -1,6 +1,9 @@
 const SectionTwo = () => {
   return (
-    <div className="w-full flex justify-center items-center mt-16 bg-[#f7f7f7]">
+    <div
+      className="w-full flex justify-center items-center mt-16 bg-[#f7f7f7]"
+      id="pages"
+    >
       <div className="w-full max-w-6xl flex flex-col min-[996px]:flex-row gap-20  py-20 px-6  md:px-10 min-[1200px]:px-0  ">
         <div className=" w-full lg:w-2/5 card-shadow flex flex-col gap-6 p-10 bg-white">
           <span className=" w-fit text-2xl font-bold bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-transparent">

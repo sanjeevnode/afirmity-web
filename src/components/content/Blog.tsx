@@ -37,8 +37,8 @@ const blogData: TblodData = [
 
 const Blog = () => {
   return (
-    <div className="w-full flex justify-center items-center mt-16">
-      <div className="w-full max-w-6xl flex flex-col px-6  md:px-10  min-[1200px]:px-0 border py-8 ">
+    <div className="w-full flex justify-center items-center mt-16" id="blog">
+      <div className="w-full max-w-6xl flex flex-col px-6  md:px-10  min-[1200px]:px-0  py-8 ">
         <div className="flex w-full flex-col justify-center items-center">
           <span className="text-2xl w-fit font-bold bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
             LATEST BLOG

@@ -1,6 +1,22 @@
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { AlignRight } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Link } from "react-scroll";
+
+interface LinkItem {
+  link: string;
+  name: string;
+}
+
+const linkItems: LinkItem[] = [
+  { link: "home", name: "Home" },
+  { link: "pages", name: "Pages" },
+  { link: "services", name: "Services" },
+  { link: "projects", name: "Projects" },
+  { link: "blog", name: "Blog" },
+  { link: "contact", name: "Contact" },
+];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -41,7 +57,7 @@ const Navbar = () => {
       </div>
 
       <nav
-        className={`fixed w-full flex justify-center    py-2 max-[1200px]:bg-white text-black  max-md:mt-0 transition-all  duration-300 z-[9999]  ${
+        className={`fixed w-full flex justify-center    py-2 max-[1200px]:bg-white text-black  max-md:mt-0 transition-all  duration-300 z-40  ${
           scrolled
             ? "mt-0 bg-white text-black shadow-md"
             : " mt-10 min-[1200px]:text-white"
@@ -60,13 +76,20 @@ const Navbar = () => {
           {/* Menu */}
 
           <ul
-            className={` gap-6 items-center justify-center font-semibold text-[16px] hidden md:flex ${
+            className={` gap-8 items-center justify-center font-semibold text-[16px] hidden md:flex ${
               !scrolled ? "min-[1200px]:ml-[300px]" : "ml-0"
             }`}
           >
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
+            {linkItems.map((item) => (
+              <Link
+                to={item.link}
+                smooth={true}
+                duration={1000}
+                key={item.link}
+              >
+                <li className="cursor-pointer">{item.name}</li>
+              </Link>
+            ))}
           </ul>
 
           <Button className="py-6 px-8 text-white font-semibold hidden md:flex">
@@ -76,7 +99,17 @@ const Navbar = () => {
           {/* Mobile menu */}
 
           <div className="md:hidden">
-            <AlignRight className="w-12 h-12 text-black" />
+            <Sheet>
+              <SheetTrigger>
+                <AlignRight className="w-12 h-12 text-black" />
+              </SheetTrigger>
+              <SheetContent className="bg-white flex flex-col gap-10">
+                <div className="flex flex-col">
+                  <img src="/logo.png" alt="" className="h-[60px] w-[200px]" />
+                  <span className="w-full bg-slate-300 h-[1px] mt-4" />
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </nav>

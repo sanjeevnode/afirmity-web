@@ -7,7 +7,7 @@ import TopAddress from "./components/shared/TopAddress";
 
 function App() {
   return (
-    <main className="w-screen  flex flex-col relative">
+    <main className="w-screen  flex flex-col relative !scroll-smooth">
       <TopAddress />
       <Navbar />
       <Hero />
