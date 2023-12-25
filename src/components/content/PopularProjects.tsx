@@ -96,7 +96,9 @@ const PopularProjects = () => {
           <Button onClick={handlePrev} className="rounded-full p-2">
             <ChevronLeft className="w-7 h-7 text-white" />
           </Button>
-          <span className="text-2xl text-black font-bold">1 / 2</span>
+          <span className="text-2xl text-black font-bold">
+            {currentIndex + 1} / {projectData.length}
+          </span>
 
           <Button onClick={handleNext} className="rounded-full p-2">
             <ChevronRight className="w-7 h-7 text-white" />

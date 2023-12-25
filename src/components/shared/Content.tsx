@@ -1,8 +1,11 @@
+import Blog from "../content/Blog";
 import InformationContent from "../content/InformationContent";
 import MeetOurExperts from "../content/MeetOurExperts";
 import OurServices from "../content/OurServices";
 import PartnersInWorld from "../content/PartnersInWorld";
 import PopularProjects from "../content/PopularProjects";
+import RequestCall from "../content/RequestCall";
+import Reviews from "../content/Reviews";
 import SectionOne from "../content/SectionOne";
 import SectionTwo from "../content/SectionTwo";
 const Content = () => {
@@ -21,6 +24,12 @@ const Content = () => {
       <MeetOurExperts />
       {/* Popular Projects */}
       <PopularProjects />
+      {/* Request a call */}
+      <RequestCall />
+      {/* Reviews */}
+      <Reviews />
+      {/* Blog */}
+      <Blog />
     </>
   );
 };

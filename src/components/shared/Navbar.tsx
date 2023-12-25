@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
 
       <nav
-        className={`fixed w-full flex justify-center    py-2 max-[1200px]:bg-white text-black  max-md:mt-0 transition-all  duration-300 z-[99999]  ${
+        className={`fixed w-full flex justify-center    py-2 max-[1200px]:bg-white text-black  max-md:mt-0 transition-all  duration-300 z-[9999]  ${
           scrolled
             ? "mt-0 bg-white text-black shadow-md"
             : " mt-10 min-[1200px]:text-white"
