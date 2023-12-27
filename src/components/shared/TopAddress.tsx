@@ -1,11 +1,18 @@
 import { MapPin, Phone } from "lucide-react";
 import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa6";
+import { useLocation } from "react-router-dom";
 
 const TopAddress = () => {
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
   return (
     <div className="hidden md:flex w-full justify-center items-center   bg-dark text-white border-b ">
       <div className="flex md:justify-center min-[996px]:justify-between    max-w-6xl py-2 w-full px-6 md:px-10  min-[1200px]:px-0 ">
-        <div className=" min-[1200px]:ml-[300px] flex gap-8 items-center justify-center">
+        <div
+          className={`${
+            isHome && " min-[1200px]:ml-[300px]"
+          } flex gap-8 items-center justify-center`}
+        >
           <div className="  flex gap-2 items-center justify-center">
             <MapPin className="w-6 h-6 text-primary" />
             <span className="text-white font-[18px]">

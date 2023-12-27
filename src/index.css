@@ -63,3 +63,7 @@ body {
 .courasel-transition {
   transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
+
+.team-details-share-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

@@ -1,24 +1,14 @@
 import { useEffect, useState } from "react";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { AlignRight } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Link } from "react-scroll";
+import NavItems from "./NavItems";
+import { useLocation } from "react-router-dom";
+import MobileNavItems from "./MobileNavItems";
 
-interface LinkItem {
-  link: string;
-  name: string;
-}
-
-const linkItems: LinkItem[] = [
-  { link: "home", name: "Home" },
-  { link: "pages", name: "Pages" },
-  { link: "services", name: "Services" },
-  { link: "projects", name: "Projects" },
-  { link: "blog", name: "Blog" },
-  { link: "contact", name: "Contact" },
-];
-
-const Navbar = () => {
+const NavBar = () => {
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -34,13 +24,17 @@ const Navbar = () => {
     return () => {
       document.removeEventListener("scroll", handleScroll);
     };
-  }, [scrolled]);
+  }, [scrolled, pathname]);
 
   return (
     <>
       {/* Big-Left Icon */}
 
-      <div className="absolute top-0 left-0 w-[380px] h-[120px]">
+      <div
+        className={`absolute top-0 left-0 w-[380px] h-[120px] ${
+          !isHome && "hidden"
+        } `}
+      >
         <div
           className={`${
             scrolled
@@ -52,45 +46,32 @@ const Navbar = () => {
             <img src="/logo.png" alt="" className="h-[60px] w-[200px]" />
           </div>
           <div className="absolute top-0 left-5 w-[360px] h-[120px] bg-white z-10 transform skew-x-12"></div>
-          <div className="absolute -top-3 left-8 w-[360px] h-[120px] bg-slate-200 transform skew-x-12"></div>
+          <div className="absolute -top-3 left-8 w-[360px] h-[120px] bg-slate-200 z-[5] transform skew-x-12"></div>
         </div>
       </div>
 
       <nav
-        className={`fixed w-full flex justify-center    py-2 max-[1200px]:bg-white text-black  max-md:mt-0 transition-all  duration-300 z-40  ${
+        className={`fixed w-full flex justify-center    py-5 max-[1200px]:bg-white text-black  max-md:mt-0 transition-all  duration-300 z-40  ${
           scrolled
             ? "mt-0 bg-white text-black shadow-md"
-            : " mt-10 min-[1200px]:text-white"
-        }`}
+            : isHome
+            ? " mt-10 min-[1200px]:text-white"
+            : "mt-10 bg-white text-black shadow-md"
+        }
+        `}
       >
         {/* Logo */}
         <div className="max-w-6xl flex justify-between items-center  w-full px-6 md:px-10  min-[1200px]:px-0 ">
           <div
             className={`max-[1200px]:flex ${
-              scrolled ? "flex visible" : "hidden"
+              scrolled ? "flex visible" : isHome && "hidden"
             }`}
           >
             <img src="/logo.png" alt="" className="h-[60px] w-[200px]" />
           </div>
 
           {/* Menu */}
-
-          <ul
-            className={` gap-8 items-center justify-center font-semibold text-[16px] hidden md:flex ${
-              !scrolled ? "min-[1200px]:ml-[300px]" : "ml-0"
-            }`}
-          >
-            {linkItems.map((item) => (
-              <Link
-                to={item.link}
-                smooth={true}
-                duration={1000}
-                key={item.link}
-              >
-                <li className="cursor-pointer">{item.name}</li>
-              </Link>
-            ))}
-          </ul>
+          <NavItems scrolled={scrolled} isHome={isHome} />
 
           <Button className="py-6 px-8 text-white font-semibold hidden md:flex">
             Get Consultant
@@ -108,17 +89,7 @@ const Navbar = () => {
                   <img src="/logo.png" alt="" className="h-[60px] w-[200px]" />
                   <span className="w-full bg-slate-300 h-[1px] mt-4" />
                 </div>
-
-                {linkItems.map((item) => (
-                  <Link
-                    to={item.link}
-                    smooth={true}
-                    duration={1000}
-                    key={item.link}
-                  >
-                    <span className="cursor-pointer">{item.name}</span>
-                  </Link>
-                ))}
+                <MobileNavItems />
               </SheetContent>
             </Sheet>
           </div>
@@ -128,4 +99,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
