@@ -11,7 +11,7 @@ const NavItems = ({
 }) => {
   return (
     <ul
-      className={`gap-4 min-[1200px]:gap-8 items-center justify-center font-semibold text-[16px] hidden md:flex ${
+      className={`gap-4 min-[1200px]:gap-8 items-center justify-center font-semibold md:text-[16px] hidden md:flex ${
         !scrolled ? (isHome ? "min-[1200px]:ml-[300px]" : "mt-0") : "ml-0"
       }`}
     >

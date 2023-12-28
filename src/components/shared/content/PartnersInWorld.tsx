@@ -19,7 +19,7 @@ const PartnersInWorld = () => {
           </span>
         </div>
         <div className="min-[996px]:w-2/3 w-full flex justify-center items-center ">
-          <div className="grid md:grid-cols-3 grid-cols-2 ">
+          <div className="grid md:grid-cols-3 grid-cols-2 w-[80%] justify-items-center ">
             <img
               src="/walmart.png"
               alt=""

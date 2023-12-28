@@ -40,7 +40,7 @@ const SectionOne = () => {
               className=" w-full min-[996px]:w-[80%] object-cover"
             />
 
-            <div className="min-[996px]:absolute bottom-0  left-[50%] min-[996px]: p-10 flex flex-col md:flex-row md:justify-between  min-[996px]:flex-col  bg-black">
+            <div className="min-[996px]:absolute bottom-0  left-[50%] min-[996px]: p-8 flex flex-col md:flex-row md:justify-between  min-[996px]:flex-col  bg-black">
               <div className="flex justify-center items-center gap-6 max-md:border-b min-[996px]:border-b  border-slate-400 py-4">
                 <PiCertificate className="w-12 h-12 text-red-500" />
                 <div className="flex flex-col">

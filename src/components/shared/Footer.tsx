@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 const Footer = () => {
   return (
     <div
-      className="w-full flex justify-center items-center mt-16 bg-dark"
+      className="w-full flex justify-center items-center  bg-dark"
       id="contact"
     >
       <div className="w-full max-w-6xl py-20   px-6  md:px-10 min-[1200px]:px-0 grid grid-cols-1 md:grid-cols-2 min-[996px]:grid-cols-4 justify-items-start gap-10 ">

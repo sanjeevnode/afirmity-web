@@ -73,7 +73,7 @@ const NavBar = () => {
           {/* Menu */}
           <NavItems scrolled={scrolled} isHome={isHome} />
 
-          <Button className="py-6 px-8 text-white font-semibold hidden md:flex">
+          <Button className="min-[996px]:py-6 min-[996px]:px-8 text-white font-semibold hidden md:flex">
             Get Consultant
           </Button>
 

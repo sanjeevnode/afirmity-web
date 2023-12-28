@@ -93,3 +93,32 @@ export const teamExpertList: IteamExpert[] = [
     img: "/team-expert8.jpeg",
   },
 ];
+
+export interface IFaq {
+  question: string;
+  answer: string;
+}
+
+export const faqList: IFaq[] = [
+  {
+    question: "Where can i get analytics help?",
+    answer:
+      "Bennings appetite disposed me an at subjects an. To no indulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now minute exact dear open to reaching out.",
+  },
+  {
+    question: "How much does data analytics cost?",
+    answer:
+      "Cennings appetite disposed me an at subjects an. To no indulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now minute exact dear open to reaching out.",
+  },
+
+  {
+    question: "What kind of data is needed for analytics?",
+    answer:
+      "Tennings appetite disposed me an at subjects an. To no indulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now minute exact dear open to reaching out.",
+  },
+  {
+    question: "How do i pay for your services?",
+    answer:
+      "Sennings appetite disposed me an at subjects an. To no indulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now minute exact dear open to reaching out.",
+  },
+];

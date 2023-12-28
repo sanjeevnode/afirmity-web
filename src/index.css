@@ -67,3 +67,16 @@ body {
 .team-details-share-shadow {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+.faq-question-shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contact-form-shadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
