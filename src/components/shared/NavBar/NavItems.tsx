@@ -24,7 +24,7 @@ const NavItems = ({
             )}
           </Link>
           {item.subLinks && (
-            <ul className="hidden border py-6 flex-col absolute group-hover:flex space-y-4 bg-white min-w-[250px]">
+            <ul className="hidden nav-sublist-shadow   py-6 flex-col absolute group-hover:flex space-y-4 bg-white min-w-[250px]">
               {item.subLinks.map((subItem) => (
                 <Link key={subItem.name} to={subItem.link}>
                   <li className="cursor-pointer text-black hover:outline px-6">

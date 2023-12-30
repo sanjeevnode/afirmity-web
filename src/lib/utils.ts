@@ -5,6 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+// Nav Link
 export interface LinkItem {
   link: string;
   name: string;
@@ -44,6 +45,7 @@ export const navLinkItems: LinkItem[] = [
   { link: "/pages/contact", name: "Contact" },
 ];
 
+// Team Expert
 export interface IteamExpert {
   post: string;
   name: string;
@@ -94,6 +96,7 @@ export const teamExpertList: IteamExpert[] = [
   },
 ];
 
+// FAQ
 export interface IFaq {
   question: string;
   answer: string;
@@ -120,5 +123,34 @@ export const faqList: IFaq[] = [
     question: "How do i pay for your services?",
     answer:
       "Sennings appetite disposed me an at subjects an. To no indulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now minute exact dear open to reaching out.",
+  },
+];
+
+export interface ILatestProject {
+  img: string;
+  category: string;
+  title: string;
+}
+
+export const latestProjectList: ILatestProject[] = [
+  {
+    img: "/latest-project1.jpeg",
+    category: "Consulting,Recruitment",
+    title: "Coping under the current climate",
+  },
+  {
+    img: "/latest-project2.jpeg",
+    category: "Consulting,Recruitment",
+    title: "Purpose Driven Eployers Succeed",
+  },
+  {
+    img: "/latest-project3.jpeg",
+    category: "Consulting,Recruitment",
+    title: "Share Statics with Team Leader",
+  },
+  {
+    img: "/latest-project4.jpeg",
+    category: "Consulting,Recruitment",
+    title: "Nifty Team Responds After Crisis",
   },
 ];

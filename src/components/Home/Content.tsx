@@ -1,7 +1,7 @@
 import Blog from "../shared/content/Blog";
 import InformationContent from "../shared/content/InformationContent";
 import MeetOurExperts from "../shared/content/MeetOurExperts";
-import OurServices from "../shared/content/OurServices";
+import OurProcess from "../shared/content/OurProcess";
 import PartnersInWorld from "../shared/content/PartnersInWorld";
 import PopularProjects from "../shared/content/PopularProjects";
 import RequestCall from "../shared/content/RequestCall";
@@ -15,7 +15,7 @@ const Content = () => {
       {/* What do we do */}
       <SectionTwo />
       {/* Our Services */}
-      <OurServices />
+      <OurProcess />
       {/* Information */}
       <InformationContent />
       {/* Partners In World */}

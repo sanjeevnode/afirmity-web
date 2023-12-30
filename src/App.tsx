@@ -7,13 +7,14 @@ import ContactUs from "./components/Pages/ContactUs";
 import FaqPage from "./components/Pages/FaqPage";
 import LatestProjects from "./components/Projects/LatestProjects";
 import ProjectDetails from "./components/Projects/ProjectDetails";
-import OurServices from "./components/Services/OurServices";
+
 import ServiceDetails from "./components/Services/ServiceDetails";
 import Blog from "./components/Blog/Blog";
 import TopAddress from "./components/shared/TopAddress";
 import Footer from "./components/shared/Footer";
 import NavBar from "./components/shared/NavBar/NavBar";
 import Error from "./components/shared/Error";
+import OurServices from "./components/Services/OurServices";
 
 function App() {
   return (

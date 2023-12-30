@@ -1,9 +1,9 @@
 import { ChevronRight, HomeIcon } from "lucide-react";
 import SectionOne from "../shared/content/SectionOne";
-import OurServices from "../shared/content/OurServices";
 import PartnersInWorld from "../shared/content/PartnersInWorld";
 import MeetOurExperts from "../shared/content/MeetOurExperts";
 import Reviews from "../shared/content/Reviews";
+import OurProcess from "../shared/content/OurProcess";
 
 const AboutUs = () => {
   return (
@@ -32,7 +32,7 @@ const AboutUs = () => {
       <SectionOne />
 
       {/* Our processes */}
-      <OurServices />
+      <OurProcess />
 
       {/* Partners In world */}
       <PartnersInWorld />

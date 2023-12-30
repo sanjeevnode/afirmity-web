@@ -1,4 +1,4 @@
-const OurServices = () => {
+const OurProcess = () => {
   return (
     <div
       className="w-full flex justify-center items-center mt-16"
@@ -76,4 +76,4 @@ const OurServices = () => {
   );
 };
 
-export default OurServices;
+export default OurProcess;
