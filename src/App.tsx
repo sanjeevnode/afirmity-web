@@ -15,12 +15,14 @@ import Footer from "./components/shared/Footer";
 import NavBar from "./components/shared/NavBar/NavBar";
 import Error from "./components/shared/Error";
 import OurServices from "./components/Services/OurServices";
+import ScrollToTop from "./lib/ScrollToTop";
 
 function App() {
   return (
     <main className="w-screen flex flex-col !scroll-smooth">
       <TopAddress />
       <NavBar />
+      <ScrollToTop />
       <Routes>
         {/* Home */}
         <Route path="/" element={<Home />} />

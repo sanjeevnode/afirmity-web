@@ -126,6 +126,7 @@ export const faqList: IFaq[] = [
   },
 ];
 
+// Latest Project
 export interface ILatestProject {
   img: string;
   category: string;
@@ -152,5 +153,51 @@ export const latestProjectList: ILatestProject[] = [
     img: "/latest-project4.jpeg",
     category: "Consulting,Recruitment",
     title: "Nifty Team Responds After Crisis",
+  },
+];
+
+// Blogs
+
+export interface IBlog {
+  img: string;
+  title: string;
+  desc: string;
+  author: string;
+  date: string;
+  link?: string;
+}
+
+export const blogList: IBlog[] = [
+  {
+    img: "/blog-page1.jpeg",
+    title: "How to improve your business growth",
+    desc: "Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now ",
+    author: "Alex Maxwel",
+    date: "April 15, 2023",
+    link: "/blog",
+  },
+  {
+    img: "/blog-page2.jpeg",
+    title: "What is the future of business in 2024",
+    desc: "Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now",
+    author: "Bikash Kumar",
+    date: "March 23, 2023",
+    link: "/blog",
+  },
+  {
+    img: "/blog-page3.jpeg",
+    title: "How to improve your business growth",
+    desc: "Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now",
+    author: "Alex Maxwel",
+    date: "April 15, 2023",
+    link: "/blog",
+  },
+  {
+    img: "/blog-page3.jpeg",
+    title: "How to improve your business growth",
+    desc: "Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now",
+    author: "Alex Maxwel",
+    date: "April 15, 2023",
+    link: "/blog",
   },
 ];
