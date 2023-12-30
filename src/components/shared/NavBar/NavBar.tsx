@@ -84,7 +84,7 @@ const NavBar = () => {
               <SheetTrigger>
                 <AlignRight className="w-12 h-12 text-black" />
               </SheetTrigger>
-              <SheetContent className="bg-white flex flex-col gap-6">
+              <SheetContent className="bg-white flex flex-col gap-6 overflow-y-auto">
                 <div className="flex flex-col">
                   <img src="/logo.png" alt="" className="h-[60px] w-[200px]" />
                   <span className="w-full bg-slate-300 h-[1px] mt-4" />
