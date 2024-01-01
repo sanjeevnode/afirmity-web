@@ -7,22 +7,25 @@ const TopAddress = () => {
   const isHome = pathname === "/";
   return (
     <div className="hidden md:flex w-full justify-center items-center   bg-dark text-white border-b ">
-      <div className="flex md:justify-center min-[996px]:justify-between    max-w-6xl py-2 w-full px-6 md:px-10  min-[1200px]:px-0 ">
+      <div className="flex md:justify-center min-[996px]:justify-end    max-w-6xl py-2 w-full px-6 md:px-10  min-[1200px]:px-0 ">
         <div
           className={`${
-            isHome && " min-[1200px]:ml-[300px]"
-          } flex gap-8 items-center justify-center`}
+            !isHome && " min-[996px]:justify-start"
+          } flex gap-8 items-center  justify-center w-full`}
         >
+          <div className="flex gap-8 items-center">
           <div className="  flex gap-2 items-center justify-center">
-            <MapPin className="w-6 h-6 text-primary" />
-            <span className="text-white font-[18px]">
-              70240 Avenue of the Moon, California
-            </span>
-          </div>
+          <MapPin className="w-6 h-6 text-primary" />
+          <span className="text-white font-[18px]">
+            70240 Avenue of the Moon, California
+          </span>
+        </div>
 
-          <div className="flex gap-2 items-center justify-center">
-            <Phone className="w-6 h-6 text-primary" />
-            <span className="text-white font-[18px]">+4412552</span>
+        <div className="flex gap-2 items-center justify-center">
+          <Phone className="w-6 h-6 text-primary" />
+          <span className="text-white font-[18px]">+4412552</span>
+        </div>
+
           </div>
         </div>
 

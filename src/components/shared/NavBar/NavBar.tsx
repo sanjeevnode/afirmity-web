@@ -31,7 +31,7 @@ const NavBar = () => {
       {/* Big-Left Icon */}
 
       <div
-        className={`absolute top-0 left-0 w-[380px] h-[120px] ${
+        className={`absolute top-0 left-0 w-[45%] h-[120px] ${
           !isHome && "hidden"
         } `}
       >
@@ -42,11 +42,11 @@ const NavBar = () => {
               : "relative w-auto  h-full max-[1200px]:hidden mr-6"
           }`}
         >
-          <div className="absolute flex justify-center items-center  top-0 left-0 w-[360px] h-[120px] bg-white z-[20]">
+          <div className="absolute flex justify-center items-center  top-0 left-0 w-[45%] h-[120px] bg-white z-[20]">
             <img src="/logo.png" alt="" className="h-[60px] w-[200px]" />
           </div>
-          <div className="absolute top-0 left-5 w-[360px] h-[120px] bg-white z-10 transform skew-x-12"></div>
-          <div className="absolute -top-3 left-8 w-[360px] h-[120px] bg-slate-200 z-[5] transform skew-x-12"></div>
+          <div className="absolute top-0 left-5 w-[45%] h-[120px] bg-white z-10 transform skew-x-12"></div>
+          <div className="absolute -top-3 left-8 w-[45%] h-[120px] bg-slate-200 z-[5] transform skew-x-12"></div>
         </div>
       </div>
 
@@ -73,13 +73,13 @@ const NavBar = () => {
           {/* Menu */}
           <NavItems scrolled={scrolled} isHome={isHome} />
 
-          <Button className="min-[996px]:py-6 min-[996px]:px-8 text-white font-semibold hidden md:flex">
+          <Button className="min-[996px]:py-6 min-[996px]:px-8 text-white font-semibold hidden min-[996px]:flex">
             Get Consultant
           </Button>
 
           {/* Mobile menu */}
 
-          <div className="md:hidden">
+          <div className="min-[996px]:hidden">
             <Sheet>
               <SheetTrigger>
                 <AlignRight className="w-12 h-12 text-black" />
