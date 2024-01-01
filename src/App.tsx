@@ -19,7 +19,7 @@ import ScrollToTop from "./lib/ScrollToTop";
 
 function App() {
   return (
-    <main className="w-screen flex flex-col !scroll-smooth">
+    <main className="w-full max-w-screen flex flex-col !scroll-smooth overflow-hidden">
       <TopAddress />
       <NavBar />
       <ScrollToTop />

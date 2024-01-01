@@ -8,6 +8,7 @@ import RequestCall from "../shared/content/RequestCall";
 import Reviews from "../shared/content/Reviews";
 import SectionOne from "../shared/content/SectionOne";
 import SectionTwo from "../shared/content/SectionTwo";
+import ShowCase from "../shared/content/ShowCase";
 const Content = () => {
   return (
     <>
@@ -18,6 +19,8 @@ const Content = () => {
       <OurProcess />
       {/* Information */}
       <InformationContent />
+      {/* Show Case */}
+      <ShowCase/>
       {/* Partners In World */}
       <PartnersInWorld />
       {/* meet or expert */}
