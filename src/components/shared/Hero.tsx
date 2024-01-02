@@ -38,7 +38,7 @@ const Hero = () => {
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6, ease: "linear" }}
+            transition={{ duration: 0.8, delay: 1, ease: "linear" }}
           >
             <span className="md:text-6xl  text-3xl text-white font-bold">
               Financial Analysis Developing Meeting.
@@ -48,7 +48,7 @@ const Hero = () => {
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.7, ease: "linear" }}
+            transition={{ duration: 0.8, delay: 1.5, ease: "linear" }}
           >
             <motion.div
               onMouseEnter={parentHover}
