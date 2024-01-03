@@ -20,9 +20,9 @@ const Hero = () => {
         src="/Hero.jpg"
         alt=""
         className="absolute inset-0 w-full h-full z-0"
-        initial={{ scale: 1.1 }}
+        initial={{ scale: 1.125 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 3.5, ease: "easeIn" }}
+        transition={{ duration: 7, ease: "easeInOut" }}
       />
       <div className="max-w-6xl  flex   min-[1200px]:justify-end px-6 md:px-10 z-10 min-[1200px]:px-0 justify-start items-center h-full  w-full">
         <div className="flex flex-col gap-6 w-full md:w-1/2">
