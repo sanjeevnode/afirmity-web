@@ -3,7 +3,7 @@ import { Button } from "../../ui/button";
 import { AlignRight } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import NavItems from "./NavItems";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import MobileNavItems from "./MobileNavItems";
 
 const NavBar = () => {
@@ -51,7 +51,7 @@ const NavBar = () => {
       </div>
 
       <nav
-        className={`fixed w-full flex justify-center    py-5 max-[1200px]:bg-white text-black  max-md:mt-0 transition-all  duration-300 z-40  ${
+        className={`fixed w-full flex justify-center py-1  items-center md:py-5 max-[1200px]:bg-white text-black  max-md:mt-0 transition-all  duration-300 z-40  ${
           scrolled
             ? "mt-0 bg-white text-black shadow-md"
             : isHome
@@ -63,11 +63,24 @@ const NavBar = () => {
         {/* Logo */}
         <div className="max-w-6xl flex justify-between items-center  w-full px-6 md:px-10  min-[1200px]:px-0 ">
           <div
-            className={`max-[1200px]:flex ${
+            className={`max-[1200px]:flex  ${
               scrolled ? "flex visible" : isHome && "hidden"
             }`}
           >
-            <img src="/affirmity.svg" alt="" className="h-[60px] w-[200px]" />
+            <Link to="/">
+              <img
+                src="/affirmity.svg"
+                alt=""
+                className="h-[60px] w-[200px] hidden md:inline cursor-pointer"
+              />
+            </Link>
+            <Link to="/">
+              <img
+                src="/affirmity-logo.svg"
+                alt=""
+                className="h-11 w-11 md:hidden cursor-pointer"
+              />
+            </Link>
           </div>
 
           {/* Menu */}
@@ -79,14 +92,18 @@ const NavBar = () => {
 
           {/* Mobile menu */}
 
-          <div className="min-[996px]:hidden">
+          <div className="min-[996px]:hidden flex items-center">
             <Sheet>
               <SheetTrigger>
                 <AlignRight className="w-12 h-12 text-black" />
               </SheetTrigger>
               <SheetContent className="bg-white flex flex-col gap-6 overflow-y-auto">
                 <div className="flex flex-col">
-                  <img src="/logo.png" alt="" className="h-[60px] w-[200px]" />
+                  <img
+                    src="/affirmity.svg"
+                    alt=""
+                    className="h-[60px] w-[200px]"
+                  />
                   <span className="w-full bg-slate-300 h-[1px] mt-4" />
                 </div>
                 <MobileNavItems />
