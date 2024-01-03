@@ -43,7 +43,7 @@ const NavBar = () => {
           }`}
         >
           <div className="absolute flex justify-center items-center  top-0 left-0 w-[45%] h-[120px] bg-white z-[20]">
-            <img src="/logo.png" alt="" className="h-[60px] w-[200px]" />
+            <img src="/affirmity.svg" alt="" className="h-[60px] w-[200px]" />
           </div>
           <div className="absolute top-0 left-5 w-[45%] h-[120px] bg-white z-10 transform skew-x-12"></div>
           <div className="absolute -top-3 left-8 w-[45%] h-[120px] bg-slate-200 z-[5] transform skew-x-12"></div>
@@ -67,7 +67,7 @@ const NavBar = () => {
               scrolled ? "flex visible" : isHome && "hidden"
             }`}
           >
-            <img src="/logo.png" alt="" className="h-[60px] w-[200px]" />
+            <img src="/affirmity.svg" alt="" className="h-[60px] w-[200px]" />
           </div>
 
           {/* Menu */}

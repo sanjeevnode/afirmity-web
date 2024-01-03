@@ -9,7 +9,7 @@ const Footer = () => {
     >
       <div className="w-full max-w-6xl py-20   px-6  md:px-10 min-[1200px]:px-0 grid grid-cols-1 md:grid-cols-2 min-[996px]:grid-cols-4 justify-items-start gap-10 ">
         <div className="flex flex-col items-start p-1 gap-4 ">
-          <img src="/logo-light.png" alt="" className="h-[60px] w-[200px]" />
+          <img src="/affirmity.svg" alt="" className="h-[60px] w-[200px]" />
           <p className="text-slate-300 ">
             Excellence decisively nay man twins impression maximum contrasted
             remarkably is perfect.
