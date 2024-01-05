@@ -15,7 +15,7 @@ module.exports = {
         "2xl": "1400px",
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        lora: ["Lora", "sans-serif"],
       },
     },
     extend: {

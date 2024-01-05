@@ -1,5 +1,6 @@
 import { PiCertificate } from "react-icons/pi";
 import { BsGlobe2 } from "react-icons/bs";
+import { motion } from "framer-motion";
 const SectionOne = () => {
   return (
     <div className="w-full flex justify-center items-center mt-16 ">
@@ -33,14 +34,24 @@ const SectionOne = () => {
             </div>
           </div>
 
-          <div className="w-full min-[996px]:w-1/2  flex max-[996px]:flex-col max-[996px]:gap-6    min-[996px]:justify-end mb-16">
-            <img
+          <div className="w-full min-[996px]:w-1/2  flex max-[996px]:flex-col max-[996px]:gap-6    min-[996px]:justify-end mb-16 ">
+            <motion.img
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeIn" }}
               src="/feel-reward.jpeg"
               alt=""
               className=" w-full min-[996px]:w-[80%] object-cover"
             />
 
-            <div className="min-[996px]:absolute bottom-0  left-[50%] min-[996px]: p-8 flex flex-col md:flex-row md:justify-between  min-[996px]:flex-col  bg-black">
+            <motion.div
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeIn" }}
+              className="min-[996px]:absolute bottom-0  left-[50%] min-[996px]: p-8 flex flex-col md:flex-row md:justify-between  min-[996px]:flex-col  bg-black"
+            >
               <div className="flex justify-center items-center gap-6 max-md:border-b min-[996px]:border-b  border-slate-400 py-4">
                 <PiCertificate className="w-12 h-12 text-red-500" />
                 <div className="flex flex-col">
@@ -59,7 +70,7 @@ const SectionOne = () => {
                   </span>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

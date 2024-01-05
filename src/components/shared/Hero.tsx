@@ -98,7 +98,7 @@ const Hero = () => {
                     x: 20,
                   },
                   unhover: {
-                    x: -30,
+                    x: -20,
                   },
                 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}

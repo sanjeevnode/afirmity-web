@@ -16,6 +16,7 @@ import NavBar from "./components/shared/NavBar/NavBar";
 import Error from "./components/shared/Error";
 import OurServices from "./components/Services/OurServices";
 import ScrollToTop from "./lib/ScrollToTop";
+import SiteMap from "./components/shared/SiteMap";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
         <Route path="/pages/about" element={<AboutUs />} />
         <Route path="/pages/team" element={<Team />} />
         <Route path="/pages/team-details" element={<TeamDetails />} />
-        <Route path="/pages/contact" element={<ContactUs />} />
+        {/* <Route path="/pages/contact" element={<ContactUs />} /> */}
         <Route path="/pages/faq" element={<FaqPage />} />
 
         {/* Projects */}
@@ -46,6 +47,10 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         {/* Contact */}
         <Route path="/pages/contact" element={<ContactUs />} />
+
+        {/* Site Map */}
+
+        <Route path="/sitemap" element={<SiteMap />} />
 
         {/* Error */}
         <Route path="*" element={<Error />} />

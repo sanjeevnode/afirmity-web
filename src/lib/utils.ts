@@ -14,17 +14,7 @@ export interface LinkItem {
 
 export const navLinkItems: LinkItem[] = [
   { link: "/", name: "Home" },
-  {
-    link: "/",
-    name: "Pages",
-    subLinks: [
-      { link: "/pages/about", name: "About Us" },
-      { link: "/pages/team", name: "Team" },
-      { link: "/pages/team-details", name: "Team Details" },
-      { link: "/pages/faq", name: "FAQ" },
-      { link: "/pages/contact", name: "Contact Us" },
-    ],
-  },
+
   {
     link: "/projects/latest-projects",
     name: "Projects",
@@ -41,8 +31,20 @@ export const navLinkItems: LinkItem[] = [
       { link: "/services/service-details", name: "Service Details" },
     ],
   },
+  {
+    link: "/",
+    name: "Pages",
+    subLinks: [
+      { link: "/pages/about", name: "About Us" },
+      { link: "/pages/team", name: "Team" },
+      { link: "/pages/team-details", name: "Team Details" },
+      { link: "/pages/faq", name: "FAQ" },
+      {link:"/sitemap",name:"Sitemap"},
+    ],
+  },
   { link: "/blog", name: "Blog" },
   { link: "/pages/contact", name: "Contact" },
+ 
 ];
 
 // Team Expert

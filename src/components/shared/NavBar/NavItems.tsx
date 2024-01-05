@@ -18,10 +18,12 @@ const NavItems = ({
       }`}
     >
       {navLinkItems.map((item) => (
-        <li key={item.name}
-        onMouseEnter={()=>setIsOpen(true)}
-        onMouseLeave={()=>setIsOpen(false)}
-        className="relative group cursor-pointer">
+        <li
+          key={item.name}
+          onMouseEnter={() => setIsOpen(true)}
+          onMouseLeave={() => setIsOpen(false)}
+          className="relative group cursor-pointer"
+        >
           <Link to={item.link} className="flex justify-center items-center ">
             {item.name}
             {item.subLinks && (
@@ -29,10 +31,14 @@ const NavItems = ({
             )}
           </Link>
           {item.subLinks && isOpen && (
-            <ul className="hidden nav-sublist-shadow   py-6 flex-col absolute group-hover:flex space-y-4 bg-white min-w-[250px]">
+            <ul className="hidden nav-sublist-shadow   py-6 flex-col absolute group-hover:flex  bg-white min-w-[250px] ">
               {item.subLinks.map((subItem) => (
-                <Link key={subItem.name} to={subItem.link} onClick={()=>setIsOpen(false)}>
-                  <li className="cursor-pointer text-black hover:outline px-6">
+                <Link
+                  key={subItem.name}
+                  to={subItem.link}
+                  onClick={() => setIsOpen(false)}
+                >
+                  <li className="cursor-pointer text-black  hover:bg-primary/90 hover:text-white px-6 py-2 transition-all duration-200 ease-in-out">
                     {subItem.name}
                   </li>
                 </Link>
