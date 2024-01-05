@@ -64,7 +64,7 @@ const SiteMap = () => {
                 </span>
               </Link>
               <Link
-                to="/contact"
+                to="/pages/contact"
                 className="w-full flex gap-4 justify-center items-center  border border-black  rounded-lg  py-3 group cursor-pointer "
               >
                 <Phone className="w-6 h-6 text-black group-hover:text-primary" />

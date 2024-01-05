@@ -13,7 +13,7 @@ const Error = () => {
         {/* Top Image */}
         <div className="absolute inset-0 w-full h-full bg-black/40" />
         <div className="flex flex-col z-[5]">
-          <span className="text-white text-5xl font-bold">About Us</span>
+          <span className="text-white text-5xl font-bold">Error</span>
           <div className="flex justify-center items-center mt-4">
             <HomeIcon className="w-5 h-5 text-white" />
             <span className="text-white font-bold">Home</span>
