@@ -24,10 +24,17 @@ const OurProcess = () => {
         <div className="w-full grid grid-cols-1 min-[996px]:grid-cols-3  gap-8 justify-items-center mt-10">
           <div className="px-4 flex flex-col justify-center items-center gap-6">
             <div
-              className=" w-[300px] h-[300px] rounded-full bg-cover bg-center overflow-hidden flex justify-center items-end"
+              className="relative group w-[300px] h-[300px] rounded-full bg-cover bg-center overflow-hidden flex justify-center items-end"
               style={{ backgroundImage: `url(/our-process1.jpeg)` }}
             >
-              <span className="text-[80px] font-bold text-stroke">01</span>
+              <img
+                src="/our-process-hover.png"
+                alt=""
+                className="w-full h-1/2 absolute  transition-all duration-500 ease-in-out translate-y-full group-hover:translate-y-0"
+              />
+              <span className="text-[80px] font-bold text-stroke z-[5]">
+                01
+              </span>
             </div>
             <span className="text-2xl font-bold w-full text-center">
               Differentiate from the competition
@@ -40,10 +47,17 @@ const OurProcess = () => {
           </div>
           <div className="px-4 flex flex-col justify-center items-center gap-6">
             <div
-              className=" w-[300px] h-[300px] rounded-full bg-cover bg-center overflow-hidden flex justify-center items-end"
+              className="relative group w-[300px] h-[300px] rounded-full bg-cover bg-center overflow-hidden flex justify-center items-end"
               style={{ backgroundImage: `url(/our-process2.jpeg)` }}
             >
-              <span className="text-[80px] font-bold text-stroke">02</span>
+              <img
+                src="/our-process-hover.png"
+                alt=""
+                className="w-full h-1/2 absolute  transition-all duration-500 ease-in-out translate-y-full group-hover:translate-y-0"
+              />
+              <span className="text-[80px] font-bold text-stroke z-[5]">
+                02
+              </span>
             </div>
             <span className="text-2xl font-bold w-full text-center">
               Target the right people effectively
@@ -56,10 +70,18 @@ const OurProcess = () => {
           </div>
           <div className="px-4 flex flex-col justify-center items-center gap-6">
             <div
-              className=" w-[300px] h-[300px] rounded-full bg-cover bg-center overflow-hidden flex justify-center items-end"
+              className=" w-[300px] h-[300px] rounded-full bg-cover bg-center overflow-hidden flex justify-center items-end 
+               relative group"
               style={{ backgroundImage: `url(/our-process3.jpeg)` }}
             >
-              <span className="text-[80px] font-bold text-stroke">03</span>
+              <img
+                src="/our-process-hover.png"
+                alt=""
+                className="w-full h-1/2 absolute  transition-all duration-500 ease-in-out translate-y-full group-hover:translate-y-0"
+              />
+              <span className="text-[80px] font-bold text-stroke z-[5]">
+                03
+              </span>
             </div>
             <span className="text-2xl font-bold w-full text-center">
               Communicate your story consistently

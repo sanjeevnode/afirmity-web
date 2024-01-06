@@ -1,3 +1,30 @@
+const cardData = [
+  {
+    title: "Investment Marketing",
+    img: "/save-money-hand.png",
+    description:
+      "Prevailed always tolerably discourse and loser assurance creatively coin applauded more uncommonly. Him everything trouble",
+  },
+  {
+    title: "Markets Research",
+    img: "/career.png",
+    description:
+      "Prevailed always tolerably discourse and loser assurance creatively coin applauded more uncommonly. Him everything trouble",
+  },
+  {
+    title: "Consultancy & Advice",
+    img: "/group.png",
+    description:
+      "Prevailed always tolerably discourse and loser assurance creatively coin applauded more uncommonly. Him everything trouble",
+  },
+  {
+    title: "Business Planning",
+    img: "/business.png",
+    description:
+      "Prevailed always tolerably discourse and loser assurance creatively coin applauded more uncommonly. Him everything trouble",
+  },
+];
+
 const SectionTwo = () => {
   return (
     <div
@@ -35,53 +62,9 @@ const SectionTwo = () => {
         </div>
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 lg:w-3/5 max-md:px-6">
-          <div className=" shadow-sm max-[996px]:bg-white p-8 flex flex-col gap-4  ">
-            <img src="/save-money-hand.png" alt="" className="w-14 h-14" />
-
-            <span className="text-[20px] text-black font-bold hover:text-red-500 cursor-pointer">
-              Investment Marketing
-            </span>
-            <p className="text-gray-500 text-sm">
-              Prevailed always tolerably discourse and loser assurance
-              creatively coin applauded more uncommonly. Him everything trouble
-            </p>
-          </div>
-
-          <div className=" shadow-sm max-[996px]:bg-white p-8 flex flex-col gap-4  ">
-            <img src="/career.png" alt="" className="w-14 h-14" />
-
-            <span className="text-[20px] text-black font-bold hover:text-red-500 cursor-pointer">
-              Markets Research
-            </span>
-            <p className="text-gray-500 text-sm">
-              Prevailed always tolerably discourse and loser assurance
-              creatively coin applauded more uncommonly. Him everything trouble
-            </p>
-          </div>
-
-          <div className=" shadow-sm max-[996px]:bg-white p-8 flex flex-col gap-4  ">
-            <img src="/group.png" alt="" className="w-14 h-14" />
-
-            <span className="text-[20px] text-black font-bold hover:text-red-500 cursor-pointer">
-              Consultancy & Advice
-            </span>
-            <p className="text-gray-500 text-sm">
-              Prevailed always tolerably discourse and loser assurance
-              creatively coin applauded more uncommonly. Him everything trouble
-            </p>
-          </div>
-
-          <div className=" shadow-sm max-[996px]:bg-white p-8 flex flex-col gap-4  ">
-            <img src="/business.png" alt="" className="w-14 h-14" />
-
-            <span className="text-[20px] text-black font-bold hover:text-red-500 cursor-pointer">
-              Business Planning
-            </span>
-            <p className="text-gray-500 text-sm">
-              Prevailed always tolerably discourse and loser assurance
-              creatively coin applauded more uncommonly. Him everything trouble
-            </p>
-          </div>
+          {cardData.map((item, index) => (
+            <Card key={index} index={index} item={item} />
+          ))}
         </div>
       </div>
     </div>
@@ -89,3 +72,16 @@ const SectionTwo = () => {
 };
 
 export default SectionTwo;
+
+const Card = ({ item }: { item: (typeof cardData)[0]; index: number }) => {
+  return (
+    <div className=" shadow-sm max-[996px]:bg-white p-8 flex flex-col gap-4  ">
+      <img src={item.img} alt="" className="w-14 h-14" />
+
+      <span className="text-[20px] text-black font-bold hover:text-red-500 cursor-pointer">
+        {item.title}
+      </span>
+      <p className="text-gray-500 text-sm">{item.description}</p>
+    </div>
+  );
+};

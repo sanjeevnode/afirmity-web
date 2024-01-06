@@ -126,7 +126,7 @@ const SliderItem = ({ item, currentIndex }: ISliderItem) => {
         <img src={item.image} alt="" className="w-full h-full object-cover" />
       </div>
 
-      <div className="w-full h-1/2 min-[996px]:w-[50%] min-[996px]:h-[70%] bottom-0 right-0 min-[996px]:absolute  border flex flex-col bg-white p-5  md:p-10">
+      <div className="w-full h-1/2 min-[996px]:w-[50%] min-[996px]:h-[70%] bottom-0 right-0 min-[996px]:absolute  .popular-projects-shadow border-2 flex flex-col bg-white p-5  md:p-10">
         <span className="text-primary text-xl">{item.type}</span>
         <span className=" text-xl md:text-3xl font-bold text-black mt-2 md:mt-8">
           {item.name}

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Button } from "../../ui/button";
 import { AlignRight } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import NavItems from "./NavItems";
@@ -86,9 +85,12 @@ const NavBar = () => {
           {/* Menu */}
           <NavItems scrolled={scrolled} isHome={isHome} />
 
-          <Button className="min-[996px]:py-6 min-[996px]:px-8 text-white font-semibold hidden min-[996px]:flex">
-            Get Consultant
-          </Button>
+          <button className="min-[996px]:py-3 px-8 hidden min-[996px]:flex bg-primary rounded-sm relative justify-center items-center overflow-hidden group">
+            <div className="transition-all duration-300 ease-in-out transform skew-x-12 bg-white w-0 h-0 group-hover:w-[150%] group-hover:h-[150%] absolute" />
+            <span className="text-white font-semibold z-10 group-hover:text-black transition-all duration-500 ease-in-out">
+              Get Consultant
+            </span>
+          </button>
 
           {/* Mobile menu */}
 
